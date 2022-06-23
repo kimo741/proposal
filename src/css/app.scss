@@ -1,0 +1,194 @@
+// app global css in SCSS form
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400|Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background: white;
+  font-family: "Josefin Sans", serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.text-h1 {
+  margin-top: 0;
+  font-size: 2.488rem;
+  @media (max-width: $breakpoint-sm-max) {
+    margin: auto !important;
+    font-size: 1.7rem;
+  }
+}
+
+.text-h2 {
+  font-size: 2.074rem;
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 1.074rem;
+  }
+}
+
+.text-h3 {
+  font-size: 1.728rem;
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 1rem;
+  }
+}
+
+.text-h4 {
+  font-size: 1.44rem;
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 0.8rem;
+  }
+}
+
+.text-h5 {
+  font-size: 1.2rem;
+  @media (max-width: $breakpoint-sm-max) {
+    font-size: 0.7rem;
+  }
+}
+
+////////////////////////
+// Table
+///////////////////////
+.flex-table {
+  .col-id {
+    max-width: 60px;
+  }
+
+  .flex-table-header {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+    span {
+      flex: 1 1 0px;
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #999;
+      text-transform: uppercase;
+      padding: 0 10px 10px 10px;
+    }
+  }
+
+  .flex-table-item {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 20px 60px 0px rgb(11 34 56 / 10%);
+    border-radius: 5px;
+
+    .flex-table-cell {
+      flex: 1 1 0px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      overflow-wrap: break-word;
+    }
+  }
+}
+
+.q-drawer--right {
+  width: 40vw !important;
+  @media (max-width: $breakpoint-xs-max) {
+    width: 80vw !important;
+  }
+  @media (min-width: $breakpoint-sm-min) {
+    width: 40vw !important;
+  }
+}
+
+.card-shadow {
+  box-shadow: 0px 20px 60px 0px rgb(11 34 56 / 10%);
+  border-radius: 20px !important;
+}
+
+.card-round {
+  border-radius: 20px !important;
+}
+
+////////////////////////
+// media Screen
+///////////////////////
+.small-screen-only {
+  @media (max-width: $breakpoint-xs-max) {
+    display: block;
+  }
+  @media (min-width: $breakpoint-sm-min) {
+    display: none;
+  }
+}
+.larg-screen-only {
+  @media (max-width: $breakpoint-xs-max) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-sm-min) {
+    display: block;
+  }
+}
+.container {
+  @media (max-width: $breakpoint-sm-min) {
+    max-width: 450px;
+  }
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-more {
+  max-width: 600px;
+  margin: 0 auto;
+}
+////////////////////////
+// header media Screen
+///////////////////////
+.header-edite {
+  @media (max-width: $breakpoint-sm-max) {
+    margin-bottom: 10px !important;
+    padding: 10px;
+    background-color: #fff !important;
+  }
+}
+.sm-scrren__title {
+  @media (max-width: $breakpoint-sm-max) {
+    text-align: center;
+    padding: 0 !important;
+    margin: auto;
+    width: 100% !important;
+  }
+  &_h3 {
+    @media (max-width: $breakpoint-sm-max) {
+      width: 100%;
+      font-size: 25px;
+      font-weight: bolder;
+    }
+  }
+}
